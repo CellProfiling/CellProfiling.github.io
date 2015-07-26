@@ -1,0 +1,21 @@
+- pubmed: '18656560'
+  authors: 'Lundberg E, Gry M, Oksvold P, Kononen J, Andersson-Svahn H, Pontén F, Uhlén M, Asplund A.'
+  name: 'The correlation between cellular size and protein expression levels - normalization for global protein profiling.'
+  journal: 'J Proteomics. 2008 71(4):448-60.'
+  doi: '10.1016/j.jprot.2008.06.014'
+  date: 2008-07-05 00:00:00
+  key: 'false'
+- pubmed: '18029348'
+  authors: 'Barbe L, Lundberg E, Oksvold P, Stenius A, Lewin E, Björling E, Asplund A, Pontén F, Brismar H, Uhlén M, Andersson-Svahn H.'
+  name: 'Toward a confocal subcellular atlas of the human proteome.'
+  journal: 'Mol Cell Proteomics. 2008 7(3):499-508.'
+  doi: '10.1074/mcp.M700325-MCP200'
+  date: 2007-11-19 00:00:00
+  key: 'true'
+- pubmed: '17383674'
+  authors: 'Lundberg E, Sundberg M, Gräslund T, Uhlén M, Svahn HA.'
+  name: 'A novel method for reproducible fluorescent labeling of small amounts of antibodies on solid phase.'
+  journal: 'J Immunol Methods. 2007 322(1-2):40-9.'
+  doi: '10.1016/j.jim.2007.01.023'
+  date: 2007-02-28 00:00:00
+  key: 'false'

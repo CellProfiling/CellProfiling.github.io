@@ -1,0 +1,42 @@
+---
+layout: post
+title: "Test1"
+date: 2015-07-01T23:34:35+02:00
+author: martin
+---
+
+{% assign author = site.data.org.cellprofiling.members[page.author] %}
+<a rel="author"
+  href="https://twitter.com/{{ author.twitter }}"
+  title="{{ author.name }}">
+    {{ author.name }}
+</a>
+
+<ul>
+{% for org_hash in site.data.org %}
+{% assign org = org_hash[1] %}
+  <li>
+    <a href="https://github.com/{{ org.username }}">
+      {{ org.name }}
+    </a>
+    ({{ org.members | size }} members)
+  </li>
+{% endfor %}
+</ul>
+
+<ul>
+{% for member in site.data.org.cellprofiling.members %}
+{% assign handle = member[1] %}
+  <li>
+    {% if handle.github %}
+      <a href="https://github.com/{{ handle.github }}">
+        {{ handle.name }}
+      </a>
+    {% else %}
+      {{ handle.name }}
+    {% endif %}
+  </li>
+{% endfor %}
+</ul>
+
+<p>{{ site.data.org.cellprofiling.members.martin.name }}</p>

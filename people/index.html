@@ -1,0 +1,15 @@
+---
+layout: page
+title: "People"
+permalink: /people/
+---
+
+{% for person in site.people %}
+    <div class="page-column-left">
+      <img src="{{ '/assets/imgs/' | prepend: site.url | append:person.portrait }}" width="150" alt="{{ person.title }}" />
+    </div>
+    <div class="page-column-right">
+      <a class="post-link" href="{{ site.url }}{{ person.url }}">{{ person.title }}</a>
+      <p>{{ person.role }}</p>
+    </div>
+{% endfor %}

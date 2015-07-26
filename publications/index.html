@@ -1,0 +1,39 @@
+---
+layout: page
+title: "Publications"
+permalink: /publications/
+---
+<ul>
+{% for pub in site.data.publications %}
+  {% assign year = pub.date | date: '%Y' %}
+  {% if forloop.first %}
+    <h2>Key Publications</h2>
+  {% endif %}
+  {% if pub.key == 'true' %}
+    <li>
+      <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ pub.pubmed }}">
+        {{ pub.name }}
+      </a>
+      <p>{{ pub.authors }}</p>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+<ul>
+{% for pub in site.data.publications %}
+  {% assign year = pub.date | date: '%Y' %}
+  {% if forloop.first %}
+    {% assign old_year = '0000' %}
+  {% endif %}
+  {% if year != old_year %}
+    {% assign old_year = year %}
+    <h2>{{ old_year }}</h2>
+  {% endif %}
+  <li>
+    <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ pub.pubmed }}">
+      {{ pub.name }}
+    </a>
+    <p>{{ pub.authors }}</p>
+  </li>
+{% endfor %}
+</ul>

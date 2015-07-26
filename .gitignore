@@ -5,3 +5,4 @@ _site
 Gemfile*
 
 _deploy.yml
+.deploy/
