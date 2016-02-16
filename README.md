@@ -6,11 +6,11 @@ Please point your Pull Request (PR) at the `source` branch. After a PR has been 
 
 ## Git: Add changes in a new branch
 
-| Command | Action |
-|---|---|
-| `git pull origin source` | pull changes in source branch from github to local |
-| `git checkout -b pr-branch source` | create a new branch for a PR from source branch |
-| `git push origin pr-branch` | push new commits of pr-branch to github |
+| Command                            | Action                                             |
+|------------------------------------|----------------------------------------------------|
+| `git pull origin source`           | pull changes in source branch from github to local |
+| `git checkout -b pr-branch source` | create a new branch for a PR from source branch    |
+| `git push origin pr-branch`        | push new commits of pr-branch to github            |
 
 ## Github: Make the PR, review changes and merge into source branch
 
@@ -24,11 +24,11 @@ https://help.github.com/articles/using-pull-requests/
 
 ## Octopress to generate and deploy
 
-| Command | Action |
-|---|---|
-| `jekyll serve` | Preview site on [http://127.0.0.1:4000](http://127.0.0.1:4000)
-| `jekyll build` | Generate new version of the site
-| `octopress deploy` | Deploy a new version of the site
+| Command            | Action                                                         |
+|--------------------|----------------------------------------------------------------|
+| `jekyll serve`     | Preview site on [http://127.0.0.1:4000](http://127.0.0.1:4000) |
+| `jekyll build`     | Generate new version of the site                               |
+| `octopress deploy` | Deploy a new version of the site                               |
 
 See the doc at [Octopress](https://github.com/octopress/octopress) for more information.
 
