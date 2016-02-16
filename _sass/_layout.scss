@@ -206,6 +206,14 @@
     font-size: 24px;
 }
 
+.post-img {
+    vertical-align: middle;
+}
+
+.gallery-pict {
+    vertical-align: middle;
+}
+
 
 
 /**
@@ -216,7 +224,7 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 32px;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -256,11 +264,14 @@
 .page-column-left {
     float: left;
     width: 25%;
+    clear: both;
+    padding-bottom: 5px;
 }
 
 .page-column-right {
     float: right;
     width: 75%;
+    padding-bottom: 5px;
 
     &.bold {
         font-weight: bold;

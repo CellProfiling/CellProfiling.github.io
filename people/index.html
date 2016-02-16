@@ -1,15 +1,21 @@
 ---
 layout: page
 title: "People"
+weight: 3
 permalink: /people/
 ---
-
-{% for person in site.people %}
+{% assign people = site.people | sort:"weight"  %}
+{% for person in people %}
     <div class="page-column-left">
-      <img src="{{ '/assets/imgs/' | prepend: site.url | append:person.portrait }}" width="150" alt="{{ person.title }}" />
+      <!-- Rounded avatar -->
+      <div id="wrap">
+        {% picture {{ person.portrait }} class="avatar" width="150" %}
+      </div>
+
     </div>
     <div class="page-column-right">
       <a class="post-link" href="{{ site.url }}{{ person.url }}">{{ person.title }}</a>
       <p>{{ person.role }}</p>
     </div>
+    <p></p>
 {% endfor %}

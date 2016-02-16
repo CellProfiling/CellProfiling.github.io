@@ -2,6 +2,7 @@
 layout: post
 title: "Test1"
 date: 2015-07-01T23:34:35+02:00
+categories: news
 author: martin
 ---
 

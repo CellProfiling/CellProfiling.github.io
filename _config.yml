@@ -5,8 +5,8 @@ pi: Emma Lundberg
 description: > # this means to ignore newlines until "baseurl:"
   Spatial proteomics and cell biology
 baseurl: "" # the subpath of your site, e.g. /blog/
-#url: "http://cellprofiling.github.io/" # the base hostname & protocol for your site
-url: "http://localhost:4000" # the base hostname & protocol for your site
+url: "http://cellprofiling.github.io/" # the base hostname & protocol for your site
+#url: "http://localhost:4000" # the base hostname & protocol for your site, use this one during testing
 twitter_username: CellProfiling
 github_username:  CellProfiling
 
@@ -17,5 +17,47 @@ markdown: kramdown
 collections:
   people:
     output: true
-  jobs:
-    output: true
+
+# Jekyll Picture Tag
+picture:
+  source: assets/images/_fullsize
+  output: assets/images/generated
+  markup: "picture"
+  presets:
+    default:
+      attr:
+        class: "post-img"
+      source_720:
+        width: "720"
+        media: "(min-device-pixel-ratio: 1.5)"
+      source_430:
+        width: "430"
+        media: "(min-width: 360px)"
+      source_860:
+        width: "860"
+        media: "(min-width: 360px) and (min-device-pixel-ratio: 1.5)"
+      source_500:
+        width: "500"
+        media: "(min-width: 430px)"
+      source_1000:
+        width: "1000"
+        media: "(min-width: 430px) and (min-device-pixel-ratio: 1.5)"
+      source_640:
+        width: "640"
+        media: "(min-width: 500px)"
+      source_1280:
+        width: "1280"
+        media: "(min-width: 500px) and (min-device-pixel-ratio: 1.5)"
+      source_default:
+        width: "150"
+    gallery:
+      ppi: [1, 1.5]
+      attr:
+        class: "gallery-pict"
+        itemprop: "image"
+      source_medium:
+        media: "(min-width: 40em)"
+        width: "600"
+        height: "300"
+      source_default:
+        width: "300"

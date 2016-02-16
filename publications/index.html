@@ -1,13 +1,14 @@
 ---
 layout: page
 title: "Publications"
+weight: 4
 permalink: /publications/
 ---
 <ul>
 {% for pub in site.data.publications %}
   {% assign year = pub.date | date: '%Y' %}
   {% if forloop.first %}
-    <h2>Key Publications</h2>
+    <h3>Key Publications</h3>
   {% endif %}
   {% if pub.key == 'true' %}
     <li>
@@ -27,7 +28,7 @@ permalink: /publications/
   {% endif %}
   {% if year != old_year %}
     {% assign old_year = year %}
-    <h2>{{ old_year }}</h2>
+    <h3>{{ old_year }}</h3>
   {% endif %}
   <li>
     <a href="http://www.ncbi.nlm.nih.gov/pubmed/{{ pub.pubmed }}">

@@ -1,7 +1,21 @@
 ---
 layout: default
 title: "Home"
+weight: 1
 permalink: /
 ---
 
 The site is under construction so it's work in progress...
+<p></p>
+<ul class="post-list">
+  {% if site.categories.jobs %}
+    {% for job in site.categories.jobs %}
+        <li>
+          <span class="post-meta">{{ job.date | date: "%b %-d, %Y" }}</span>
+          <h3>
+            <a href="{{ site.url }}{{ job.url }}">{{ job.title }}</a>
+          </h3>
+        </li>
+    {% endfor %}
+  {% endif %}
+</ul>

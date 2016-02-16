@@ -2,7 +2,7 @@ _site
 .sass-cache
 .ink-cache
 
-Gemfile*
+# Gemfile*
 
-_deploy.yml
+# _deploy.yml
 .deploy/
