@@ -1,6 +1,6 @@
 # Cell Profiling website
 
-This is the source for the [Cell Profiling](https://cellprofiling.github.io/research/) website.
+This is the source for the [Cell Profiling](https://cellprofiling.github.io/) website.
 
 Please point your Pull Request (PR) at the `source` branch. After a PR has been merged with the source branch, a collaborator with push access can pull changes for source branch from the repo, then build locally and deploy to master branch at the repo. See below for commands.
 
@@ -8,9 +8,9 @@ Please point your Pull Request (PR) at the `source` branch. After a PR has been 
 
 | Command | Action |
 |---|---|
-| `git pull origin source` | pull changes in source branch from github to local
-| `git checkout -b pr-branch source` | create a new branch for a PR from source branch and switch to the new branch
-| `git push origin pr-branch` | push new commits of pr-branch to github
+| `git pull origin source` | pull changes in source branch from github to local |
+| `git checkout -b pr-branch source` | create a new branch for a PR from source branch |
+| `git push origin pr-branch` | push new commits of pr-branch to github |
 
 ## Github: Make the PR, review changes and merge into source branch
 
@@ -47,7 +47,7 @@ $ bundle
 ## Create a new blog post
 
 ```bash
-$ rake new_post["title"]
+$ octopress new post "My Title"
 ```
 
 ## Site preview
