@@ -1,5 +1,8 @@
 # Cell Profiling website
 
+# This repository is no longer maintained.
+## The source of the current website is at https://github.com/CellProfiling/lundberg-lab
+
 This is the source for the [Cell Profiling](https://cellprofiling.github.io/) website.
 
 Please point your Pull Request (PR) at the `source` branch. After a PR has been merged with the source branch, a collaborator with push access can pull changes for source branch from the repo, then build locally and deploy to master branch at the repo. See below for commands.
